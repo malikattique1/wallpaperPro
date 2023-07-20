@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-IqELDwQkTQZvSJY1oxQrt0nsbrhvhINB7Y8bVma3CF57ksRgq7ZmkpV5uj+PAMHe8c4bLKYU7cW5PyD0GZ6VCA==" crossorigin="anonymous" /> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+    <link rel="icon" href="img/wallpaperprologo.png" type="image/x-icon">
+
+    <title>Wallpaper Pro</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand">
+                <img src="img/wallpaperprologo.png" onclick="window.location.reload();" alt="wallpaperpro" />
+                <h3 class="logo-title">Wallpaper Pro</h3>
+            </a>
+
+            <ul class="navbar-nav">
+                <li class="navbar-item">
+                    <img src="img/playstore.png" class="navbar-link" style="width:150px; cursor: pointer;" />
+
+                </li>
+                <li class="navbar-item last-navbar-item">
+                    <a href="#" type="button"
+                        style="color:white; background-color:#0075FF; padding:12px 20px; border-radius:4px;"
+                        class="navbar-link"><b>Help</b></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="header">
+        <div class="headercontainer">
+            <div class="textinsideimage">Wallpaper Pro</div>
+            <div class="textinsideimage2">Your best friend in finding wallpapers </div>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search clock wallpaper">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+
+            <div class="slider-container">
+                <div class="slider">
+                    <!-- <img src="img/slide1.jpg" alt="Slide 1">
+                  <img src="img/slide2.jpg" alt="Slide 2">
+                  <img src="img/slide3.jpg" alt="Slide 3"> -->
+                </div>
+                <div class="slider-links">
+                    <a href="#" class="slider-link">Abstract</a>
+                    <a href="#" class="slider-link">Animals</a>
+                    <a href="#" class="slider-link">Anime</a>
+                    <a href="#" class="slider-link">Automative</a>
+                    <a href="#" class="slider-link">Bollywood</a>
+                    <a href="#" class="slider-link">Butterfly</a>
+                    <a href="#" class="slider-link">Color</a>
+                    <a href="#" class="slider-link">Comics</a>
+                    <a href="#" class="slider-link">Dark</a>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+    <div id="imgInput" class="hell">
+        <div class="container2">
+
+
+            <div class="imgwrapper">
+
+                <ul id="imgcontrols" class="controls2">
+                    <li class="row from">
+                        <h2 class="allwallpapers">All Wallpapers</h2>
+                    </li>
+
+                    <li class="row to">
+                        <select class="select-with-search2" id="fourthselect">
+                            <option>Filters</option>
+                        </select>
+                    </li>
+                </ul>
+                <ul id="imgcontrols" class="controls2">
+                    <li class="row from">
+                        <select class="select-with-search2" id="fourthselect">
+                            <option>All Orientation</option>
+                        </select>
+                    </li>
+                    <li class="row from">
+                        <select class="select-with-search2" id="fourthselect">
+                            <option>All Sizes</option>
+                        </select>
+                    </li>
+                    <li class="row from">
+                        <select class="select-with-search2" id="fourthselect">
+                            <option>Enter hex code</option>
+                        </select>
+                    </li>
+
+                </ul>
+                <!-- <div id="imageContainer" class="image-container"></div> -->
+                <div id="imageContainer" class="image-container">
+                    <li class="image-item">
+                        <img src="img/1.png" alt="Image 1">
+
+                        <span class="button-container">
+                            <img class="like-btn" src="img/save.png" alt="Image 1">
+                            <img class="save-btn" src="img/like.png" alt="Image 2">
+                        </span>
+                        <span class="downloadButton-container">
+                            <img class="download-btn" src="img/downlo.png" alt="Image 2">
+                        </span>
+                    </li>
+                    <li class="image-item">
+                        <img src="img/2.png" alt="Image 2">
+                        <span class="button-container">
+                            <img class="like-btn" src="img/save.png" alt="Image 1">
+                            <img class="save-btn" src="img/like.png" alt="Image 2">
+                        </span>
+                        <span class="downloadButton-container">
+                            <img class="download-btn" src="img/downlo.png" alt="Image 2">
+                        </span>
+                    </li>
+                    <li class="image-item">
+                        <img src="img/3.png" alt="Image 3">
+                        <span class="button-container">
+                            <img class="like-btn" src="img/save.png" alt="Image 1">
+                            <img class="save-btn" src="img/like.png" alt="Image 2">
+                        </span>
+                        <span class="downloadButton-container">
+                            <img class="download-btn" src="img/downlo.png" alt="Image 2">
+                        </span>
+                    </li>
+                    <li class="image-item">
+                        <img src="img/1.png" alt="Image 1">
+                        <span class="button-container">
+                            <img class="like-btn" src="img/save.png" alt="Image 1">
+                            <img class="save-btn" src="img/like.png" alt="Image 2">
+                        </span>
+                        <span class="downloadButton-container">
+                            <img class="download-btn" src="img/downlo.png" alt="Image 2">
+                        </span>
+                    </li>
+                    <li class="image-item">
+                        <img src="img/2.png" alt="Image 2">
+                        <span class="button-container">
+                            <img class="like-btn" src="img/save.png" alt="Image 1">
+                            <img class="save-btn" src="img/like.png" alt="Image 2">
+                        </span>
+                        <span class="downloadButton-container">
+                            <img class="download-btn" src="img/downlo.png" alt="Image 2">
+                        </span>
+                    </li>
+                    <li class="image-item">
+                        <img src="img/3.png" alt="Image 3">
+                        <span class="button-container">
+                            <img class="like-btn" src="img/save.png" alt="Image 1">
+                            <img class="save-btn" src="img/like.png" alt="Image 2">
+                        </span>
+                        <span class="downloadButton-container">
+                            <img class="download-btn" src="img/downlo.png" alt="Image 2">
+                        </span>
+                    </li>
+
+                </div>
+
+
+
+
+                <!-- <div id="imgwrappertextbox" class="wrapper">
+
+                    <div class="text-input">
+                        <textarea spellcheck="false" id="from-text2" class="from-text2" placeholder=""></textarea>
+                    </div>
+
+
+                    <div class="text-input">
+                        <textarea spellcheck="false" readonly disabled id="to-text2" class="to-text2"
+                            placeholder=""></textarea>
+                    </div>
+
+                </div> -->
+
+
+
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="buttonstextimage">
+        <div class="download-paste-buttons">
+            <button id="textTranslateBtn" class="submit-btn">
+                <img class="btnImg" src="img/language.png">
+                <span class="btnText">Translate Text</span>
+            </button>
+            <button id="imgTranslateBtn" class="submit-btn">
+                <img class="btnImg" src="img/image.png">
+                <span class="btnText">Translate Images</span>
+            </button>
+        </div>
+    </div>
+
+
+    <div id="textInput" class="hell">
+        <div class="container">
+            <ul class="controls flexalign">
+                <li class="row from">
+
+                    <select class="select-with-search" id="firstselect" style="color:#0075FF;"
+                        placeholder="Type to search..."></select>
+
+                </li>
+                <li class="exchange"><img id="exchange" class="exchangeimg" src="img/swap_horiz.png"
+                        class="fas fa-exchange-alt"></li>
+                <li class="row to">
+                    <select class="select-with-search" id="secondselect" style="color:#0075FF;"></select>
+                </li>
+            </ul>
+
+
+
+            <div class="wrapper">
+
+                <div class="text-input">
+                    <textarea spellcheck="false" class="from-text" placeholder="Type to translate"></textarea>
+
+                    <ul class="controls2">
+                        <li class="row from">
+                            <div class="icons">
+
+                                <img style="width:30px; margin-right:8px;" id="from" class="recordButton"
+                                    src="img/image1.png">
+                                <img style="width:20px; margin-right:8px;" id="from" class="fas fa-volume-up"
+                                    src="img/image2.png">
+                                <img style="width:30px; margin-right:8px;" id="from" class="fas fa-solid fa-rotate-left"
+                                    src="img/image5.png">
+                                <img style="width:30px; margin-right:8px;" id="from"
+                                    class="fas fa-solid fa-rotate-right" src="img/image6.png">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="text-input">
+                    <textarea spellcheck="false" readonly disabled class="to-text" placeholder=""></textarea>
+                    <ul class="controls2" style="align-self:self-end">
+
+                        <li class="row to">
+                            <div class="icons">
+                                <img style="width:20px; margin-right:8px;" id="to" class="fas fa-volume-up"
+                                    src="img/image7.png">
+                                <img style="width:20px; margin-right:8px;" id="to" class="fas fa-copy"
+                                    src="img/image8.png">
+                                <img style="width:20px; margin-right:8px;" id="to" class="fas fa-copy"
+                                    src="img/image9.png">
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+
+    <div id="imgInput" class="hell" style="display:none;">
+        <div class="container2">
+
+
+            <div class="imgwrapper" style="">
+
+                <ul class="controls flexalign">
+                    <li class="row from">
+                        <select class="select-with-search2" id="thirdselect" style="color:#0075FF; "></select>
+                    </li>
+                    <li id="exchange2" class="exchange2"><img class="exchangeimg" src="img/swap_horiz.png"
+                            class="fas fa-exchange-alt"></li>
+                    <li class="row to">
+                        <select class="select-with-search2" id="fourthselect" style="color:#0075FF; "></select>
+                    </li>
+                </ul>
+                <ul id="imgcontrols" class="controls2" style="display:none;">
+                    <li class="row from">
+                        <div class="icons" >
+
+                            <label style="display:flex;" class="switch" for="myCheckbox"><span style="font-family: Poppins;
+                                font-size: 15px;
+                                font-weight: 500;
+                                text-align: center;
+                                ">Show Original: </span>
+                                <input type="checkbox" id="myCheckbox">
+                                <span class="slider"></span>
+                            </label>
+
+
+                        </div>
+                    </li>
+                    <li class="row to">
+                        <div class="icons">
+                            <img style="width:22px; margin-right:12px;" id="to" class="fas fa-copy2 fa-copy"
+                                src="img/image8.png">
+                            <img style="width:20px; margin-right:12px;" id="to" class="fas fa-download fa-download2"
+                                src="img/download.png">
+                            <img id="closeimgwrapper" style="width:18px; margin-right:12px;" id="to"
+                                class="fas fa-cross fa-cross2" src="img/close.png">
+                        </div>
+                    </li>
+                </ul>
+                <div id="imageContainer" class="image-container" style="display:none;"></div>
+
+
+
+
+                <div id="imgwrappertextbox" class="wrapper" style="display:none;">
+
+                    <div class="text-input">
+                        <textarea spellcheck="false" id="from-text2" class="from-text2" placeholder=""></textarea>
+                    </div>
+
+
+                    <div class="text-input">
+                        <textarea spellcheck="false" readonly disabled id="to-text2" class="to-text2"
+                            placeholder=""></textarea>
+                    </div>
+
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+            <div class="container22" id="container2">
+                <h2>Choose an image</h2>
+                <p class="imgUpload">Upload a .jpg, .jpeg, .png.</p><br>
+                <input type="file" id="upload" accept="image/*" style="display: none;">
+                <button id="uploadButton" class="uploadButton">Browse From Your Computer</button>
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+    <div class="hell" id="flip">
+        <div class="container3" type="text" id="PhraseBook" style="position: relative;"><span class="phraseBook">Phrase
+                Book</span> <i id="from" style="position: absolute; right: 45px; color:#999999; font-size: 17px;"
+                class="fas fa-chevron-down"></i></div>
+    </div>
+
+
+
+    <div class="hell" id="panel" style="display:none;">
+        <div class="container3" type="text">
+            <button id="PhraseBook1" class="phrasebook-button" data-category="essential">Essential</button>
+            <button id="PhraseBook2" class="phrasebook-button" data-category="travel">Travel</button>
+            <button id="PhraseBook3" class="phrasebook-button" data-category="medical">Medical</button>
+            <button id="PhraseBook4" class="phrasebook-button" data-category="atHotel">At Hotel</button>
+            <button id="PhraseBook5" class="phrasebook-button" data-category="atRestaurant">At Restaurant</button>
+            <button id="PhraseBook6" class="phrasebook-button" data-category="atBar">At Bar</button>
+            <button id="PhraseBook7" class="phrasebook-button" data-category="atStore">At Store</button>
+            <div id="panel2" class="panel2" style="display:none;">
+                <div class="phrasebookcontent" style="display:none;">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="hell" id="history" style="display:none;">
+        <div class="container4">
+            <div id="historydiv" style="border-bottom:1px solid #DAE4F7; padding:28px;">
+                <h4>History</h4>
+            </div>
+            <h5 id="clearhistory" style="text-align:right; border-bottom:1px solid #DAE4F7; padding:25px; color: #0075FF; cursor: pointer;
+            ">Clear all history</h5>
+            <div class="container44">
+                <span id="historyContainer" style="padding:100px;"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="hell" id="saved" style="display:none;">
+        <div class="container5">
+            <div id="historydiv" style="border-bottom:1px solid #DAE4F7; padding:28px;">
+                <h4>Saved</h4>
+            </div>
+            <h5 id="clearsavedhistory" style="text-align:right; border-bottom:1px solid #DAE4F7; padding:25px; color: #0075FF; cursor: pointer;
+                ">Clear all history</h5>
+            <div class="container55">
+                <span id="savedContainer" style="padding:100px;"></span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="buttonstextimage">
+        <div class="history-saved-buttons">
+            <button type="submit" id="historyBtn" class="submit-btn">
+                <img src="img/history.png" id="from" class="fas fa-history btnImg"></img>
+                <span class="btnText">History</span>
+            </button>
+            <button type="submit" id="savedBtn" class="submit-btn">
+                <img src="img/grade.png" id="from" class="fas fa-star btnImg"></img>
+                <span class="btnText">Saved</span>
+            </button>
+        </div>
+    </div> -->
+
+
+
+
+    <!-- footer content section starts  -->
+    <section class="footerContent" id="footerContent">
+        <div class="footerContentBox" id="footerContentBox">
+            <div class="infoLinkBox">
+                <img src='img/wallpaperprologo.png' alt="Wallpaper Pro" />
+                <h1>Wallpaper Pro</h1>
+            </div>
+            <div class="infoLinkBox">
+                <p>Your best friend in finding Wallpapers. We categorized different wallpapers to make it easier for you to find the right one.  </p>
+            </div>
+            <div class="infoLinkBox">
+                <div class="hash-container">
+                    <div class="hash">
+                        <!-- <img src="img/slide1.jpg" alt="Slide 1">
+                      <img src="img/slide2.jpg" alt="Slide 2">
+                      <img src="img/slide3.jpg" alt="Slide 3"> -->
+                    </div>
+                    <div class="hash-links">
+                        <a href="#" class="hash-link">#nature</a>
+                        <a href="#" class="hash-link">#animegirls</a>
+                        <a href="#" class="hash-link">#clouds</a>
+                        <a href="#" class="hash-link">#lights</a>
+                        <a href="#" class="hash-link">#water</a>
+                        <a href="#" class="hash-link">#colors</a>
+                        <a href="#" class="hash-link">#stars</a>
+                        <a href="#" class="hash-link">#night</a>
+                        <a href="#" class="hash-link">#sky</a>
+                        <a href="#" class="hash-link">#trees</a>
+                        <a href="#" class="hash-link">#raining</a>
+                        <a href="#" class="hash-link">#designs</a>
+                        <a href="#" class="hash-link">#drawings</a>
+
+                    </div>
+                </div>
+            </div>
+ 
+
+        </div>
+    </section>
+    <section class="underfooterContent" id="underfooterContent">
+        <div class="underfooterContentBox" id="underfooterContentBox" >
+            <div class="infoLinkBox">
+                <p><span>About us</span></p>
+            </div>
+            <div class="infoLinkBox">
+                <p><span>Contact us</span></p>
+            </div>
+            <div class="infoLinkBox right">
+                <p><span>Privacy</span></p>
+            </div>
+            <div class="infoLinkBox right">
+                <p><span>Terms</span></p>
+            </div>
+            <div class="infoLinkBox right">
+                <p><span>Security</span></p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+</body>
+
+
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
+<!-- <script src="https://cdn.rawgit.com/naptha/tesseract.js/1.0.10/dist/tesseract.min.js"></script> -->
+<script src="js/ocr.js"></script>
+<script src="js/countries.js"></script>
+<script src="js/phrasebook.js"></script>
+<script src="js/script.js"></script>
