@@ -227,17 +227,13 @@ body {
 }
 
 .slider-links {
-    /* position: absolute; */
-    /* bottom: 10px; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     align-self: center;
-    /* flex-wrap: wrap; */
-    /* left: 50%; */
-    /* transform: translateX(-50%); */
+
 }
 
 .slider-link {
@@ -358,6 +354,236 @@ body {
 }
 
 
+
+
+.orientation-container {
+    width: 100%;
+    text-align: left;
+}
+
+.custom-select-orientation {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    position: relative;
+    width: 100%;
+}
+
+.select-trigger-orientation {
+    padding: 0 14px;
+    display: flex;
+    flex-direction: row;
+    /* gap:60px; */
+    /* align-items: space-between; */
+}
+
+.select-options-orientation {
+    flex: 1;
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.option-orientation {
+    padding: 12px 14px;
+    border-bottom: 1px solid #ccc;
+}
+
+.option-orientation:hover {
+    background-color: #ccc;
+}
+
+/* Show the options when the select is clicked */
+.select-options-orientation.open {
+    display: block;
+}
+
+
+
+
+
+
+.fas{
+    /* width:14px; */
+    /* text-align: right; */
+    align-self: right;
+    justify-self: flex-end;
+    justify-content: flex-end;
+    justify-content: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.custom-select-size {
+    text-align: left;
+    padding: 0 14px;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    position: relative;
+    width: 100%;
+
+}
+
+
+.select-options-size {
+    display: none;
+    position: absolute;
+    /* top: 100%; */
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* padding: 10px 10px; */
+    z-index: 1;
+    margin-top: 20px;
+    text-align: left;
+
+}
+
+.option-size {
+    padding: 12px 14px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.option-size:hover {
+    background-color: #CCCCCC;
+}
+
+/* Show the options when the select is clicked */
+.select-options-size.open {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.color-container {
+    text-align: left;
+    padding: 0 14px;
+
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    position: relative;
+    width: 100%;
+
+}
+
+.custom-select {
+    cursor: pointer;
+    position: relative;
+}
+
+
+.select-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 150px;
+    overflow-y: auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.option {
+    width: 72px;
+
+    height: 32px;
+    margin: 5px;
+}
+
+
+/* .option:hover {
+    size:55px;
+   }
+    */
+
+/* .custom-select.open .select-options {
+    display: block;
+    width: 100%;
+  } */
+.select-options.open {
+    display: flex;
+    flex-wrap: wrap;
+    /* max-width: 200px;  */
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 6px;
+    padding-right: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .image-container {
     display: flex;
     flex-wrap: wrap;
@@ -390,6 +616,10 @@ body {
     top: 16px;
     right: 16px;
     display: flex;
+}
+
+.button-container img {
+    height: 37px !important;
 }
 
 .downloadButton-container {
@@ -828,13 +1058,14 @@ li,
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+    gap: 25px;
 }
 
 .controls2 {
     list-style: none;
     padding: 12px 30px;
-    /* border-top: 1px solid #DAE4F7; */
-    /* border-bottom: 1px solid #DAE4F7; */
+
 }
 
 
@@ -1093,33 +1324,41 @@ li,
 
 
 .underfooterContent {
-    background-color: #F4F4F4;
+    background-color: #FFFFFF;
     border-top: 1px solid #2479F9;
 
 }
 
-#underfooterContentBox {
+
+.underfooterContentBox {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    gap: 16px;
     font-size: 17px;
     align-items: center;
     width: 76%;
     margin: 0 auto;
-    background-color: #F4F4F4;
-    color: #666666;
+    color: black;
     padding: 20px;
 }
 
-.infoLinkBox.right {
+.underfooterContentBox .infoLinkBox {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.underfooterContentBox .infoLinkBox.right {
     margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
 
-.infoLinkBox:not(.right) {
-    margin-right: 15px;
-
+.infoLinkBox p:not(.noborder) {
+    border-right: 1px solid black;
+    padding-right: 20px;
 }
-
 
 
 
@@ -1175,6 +1414,42 @@ li,
 
 
 
+@media (max-width: 1060px) {
+    .footerContentBox .infoLinkBox:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        width: 56%;
+        gap: 20px;
+    }
+
+    .footerContentBox .infoLinkBox:nth-child(3) {
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: left;
+        width: 65%;
+        /* gap:1px; */
+        margin-left: -10px;
+        line-height: 2.2;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1188,9 +1463,6 @@ li,
 
 
 @media (max-width: 660px) {
-
-
-
 
     .wrapper {
         display: block;
@@ -1208,7 +1480,6 @@ li,
         flex-direction: column;
         border-right: none;
         border-bottom: 1px solid#DAE4F7;
-        ;
     }
 
 
@@ -1316,6 +1587,38 @@ li,
     }
 
 
+
+
+
+
+    .slider-container {
+        padding-top: 40px;
+        position: relative;
+        width: 75%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+
+
+
+    .container2 {
+
+        text-align: center;
+        max-width: 90%;
+        width: 100%;
+        padding: 0px 0px 0px 0px;
+        background-color: white;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.01);
+        padding-bottom: 0px;
+        padding-top: 50px;
+
+    }
+
+
+
     .allwallpapers {
         font-size: 18px;
     }
@@ -1359,6 +1662,10 @@ li,
         right: 1px;
         display: flex;
 
+    }
+
+    .button-container img {
+        height: 18px !important;
     }
 
     .downloadButton-container {
@@ -1562,7 +1869,7 @@ li,
         flex-wrap: wrap;
         align-items: left;
         width: 100%;
-        margin-left: -10px;
+        margin-left: 0px;
         line-height: 2.2;
 
     }
@@ -1602,6 +1909,7 @@ li,
 
 
     .underfooterContent {
+        border-top: 1px solid #2479F9;
         background-color: #F4F4F4;
     }
 
@@ -1609,7 +1917,7 @@ li,
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 70%;
+        width: 80%;
         margin: 0 auto;
         background-color: #F4F4F4;
         padding: 20px;

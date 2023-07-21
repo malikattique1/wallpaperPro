@@ -97,19 +97,94 @@
                 </ul>
                 <ul id="imgcontrols" class="controls2">
                     <li class="row from">
-                        <select class="select-with-search2" id="fourthselect">
-                            <option>All Orientation</option>
-                        </select>
+                        <!-- <select class="select-with-search2" id="fourthselect">
+                            <option disabled selected>All Orientation</option>
+                            <option>Vertical</option>
+                            <option>Horizontal</option>
+                            <option>Square</option>
+
+                        </select> -->
+                        <div class="orientation-container">
+                            <div class="custom-select-orientation" id="orientationPicker">
+                                <div class="select-trigger-orientation">All Orientation
+                                    <img src="img/dropdown.png" id="from" class="fas"></img>
+                                </div>
+                                <div class="select-options-orientation">
+                                    <div class="option-orientation" data-value="Vertical">Vertical</div>
+                                    <div class="option-orientation" data-value="Horizontal">Horizontal</div>
+                                    <div class="option-orientation" data-value="Square">Square</div>
+                                </div>
+                            </div>
+                        </div>
+
                     </li>
                     <li class="row from">
-                        <select class="select-with-search2" id="fourthselect">
-                            <option>All Sizes</option>
-                        </select>
+                        <!-- <select class="select-with-search2" id="fourthselect">
+                            <option disabled selected>All Sizes</option>
+                            <option>Large</option>
+                            <option>Medium</option>
+                            <option>Small</option>
+
+                        </select> -->
+                        <div class="custom-select-size">
+                            <div class="select-trigger-size">All Sizes
+                                <img src="img/dropdown.png" id="from" class="fas"></img>
+                            </div>
+                            <div class="select-options-size">
+                                <div class="option-size">Large</div>
+                                <div class="option-size">Medium</div>
+                                <div class="option-size">Small</div>
+                            </div>
+                        </div>
+
                     </li>
                     <li class="row from">
-                        <select class="select-with-search2" id="fourthselect">
-                            <option>Enter hex code</option>
-                        </select>
+                        <!-- <select class="select-with-search2" id="fourthselect">
+                            <option disabled selected>Enter hex code</option>
+                            <option value="#FF0000">Red (#FF0000)</option>
+                            <option value="#00FF00">Green (#00FF00)</option>
+                            <option value="#0000FF">Blue (#0000FF)</option>
+                        </select> -->
+                        <!-- <div class="color-container">
+                            <div class="custom-select" id="colorPicker">
+                                <div class="select-trigger">Enter hex code</div>
+                                <div class="select-options">
+                                    <div class="option" style="background-color: #FF0000;" value="#FF0000;"></div>
+                                    <div class="option" style="background-color: #00FF00;" value="#00FF00;"></div>
+                                    <div class="option" style="background-color: #0000FF;" value="#0000FF;"></div>
+                                    <div class="option" style="background-color: #FF0000;" value="#FF0000;"></div>
+                                    <div class="option" style="background-color: #00FF00;" value="#00FF00;"></div>
+                                    <div class="option" style="background-color: #0000FF;" value="#0000FF;"></div>
+                                    <div class="option" style="background-color: #FF0000;" value="#FF0000;"></div>
+                                    <div class="option" style="background-color: #00FF00;" value="#00FF00;"></div>
+                                    <div class="option" style="background-color: #0000FF;" value="#0000FF;"></div>
+                                    <div class="option" style="background-color: #FF0000;" value="#FF0000;"></div>
+                                    <div class="option" style="background-color: #00FF00;" value="#00FF00;"></div>
+                                    <div class="option" style="background-color: #0000FF;" value="#0000FF;"></div>
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <div class="color-container">
+                            <div class="custom-select" id="colorPicker">
+                                <div class="select-trigger">Enter hex code
+                                    <img src="img/dropdown.png" id="from" class="fas"></img>
+                                </div>
+                                <div class="select-options">
+                                    <div class="option" style="background-color: #FF0000;" data-value="#FF0000"></div>
+                                    <div class="option" style="background-color: #00FF00;" data-value="#00FF00"></div>
+                                    <div class="option" style="background-color: #0000FF;" data-value="#0000FF"></div>
+                                    <div class="option" style="background-color: #FF0000;" data-value="#FF0000"></div>
+                                    <div class="option" style="background-color: #00FF00;" data-value="#00FF00"></div>
+                                    <div class="option" style="background-color: #0000FF;" data-value="#0000FF"></div>
+                                    <div class="option" style="background-color: #FF0000;" data-value="#FF0000"></div>
+                                    <div class="option" style="background-color: #00FF00;" data-value="#00FF00"></div>
+                                    <div class="option" style="background-color: #0000FF;" data-value="#0000FF"></div>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </li>
 
                 </ul>
@@ -493,7 +568,9 @@
                 <h1>Wallpaper Pro</h1>
             </div>
             <div class="infoLinkBox">
-                <p>Your best friend in finding Wallpapers. We categorized different wallpapers to make it easier for you to find the right one.  </p>
+                <p class="noborder">Your best friend in finding Wallpapers. We categorized different wallpapers to make
+                    it easier for you
+                    to find the right one. </p>
             </div>
             <div class="infoLinkBox">
                 <div class="hash-container">
@@ -520,26 +597,30 @@
                     </div>
                 </div>
             </div>
- 
+
 
         </div>
     </section>
     <section class="underfooterContent" id="underfooterContent">
-        <div class="underfooterContentBox" id="underfooterContentBox" >
+        <div class="underfooterContentBox" id="underfooterContentBox">
             <div class="infoLinkBox">
-                <p><span>About us</span></p>
-            </div>
-            <div class="infoLinkBox">
-                <p><span>Contact us</span></p>
-            </div>
-            <div class="infoLinkBox right">
-                <p><span>Privacy</span></p>
-            </div>
-            <div class="infoLinkBox right">
-                <p><span>Terms</span></p>
+                <div>
+                    <p><span>About us</span></p>
+                </div>
+                <div>
+                    <p class="noborder"><span>Contact us</span></p>
+                </div>
             </div>
             <div class="infoLinkBox right">
-                <p><span>Security</span></p>
+                <div>
+                    <p><span>Privacy Policy</span></p>
+                </div>
+                <div>
+                    <p><span>Terms</span></p>
+                </div>
+                <div>
+                    <p class="noborder"><span>Security</span></p>
+                </div>
             </div>
         </div>
     </section>
