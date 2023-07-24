@@ -46,6 +46,34 @@
                 <input type="text" class="search-input" placeholder="Search clock wallpaper">
                 <i class="fas fa-search search-icon"></i>
             </div>
+            <div class="searches-container" style="display:none;">
+                <h4>Recent Searches</h4>
+                <div class="recent-links">
+                    <a href="#" class="recent-link">Anime <img src="img/search.png" class="fasearches"></img></a>
+                    <a href="#" class="recent-link">Coffee <img src="img/search.png" class="fasearches"></img></a>
+                    <a href="#" class="recent-link">Sunset <img src="img/search.png" class="fasearches"></img></a>
+                    <a href="#" class="recent-link">Flowers <img src="img/search.png" class="fasearches"></img></a>
+                    <a href="#" class="recent-link">Food <img src="img/search.png" class="fasearches"></img></a>
+                </div>
+                <h4>Trending</h4>
+                <div class="recent-links">
+                    <a href="#" class="recent-link"><img src="img/catgimg.png"  class="catgsearches">Anime</a>
+                    <a href="#" class="recent-link"><img src="img/catgimg.png" class="catgsearches">Coffee</a>
+                    <a href="#" class="recent-link"><img src="img/catgimg.png" class="catgsearches">Sunset</a>
+                    <a href="#" class="recent-link"><img src="img/catgimg.png" class="catgsearches">Flowers</a>
+                    <a href="#" class="recent-link"><img src="img/catgimg.png" class="catgsearches">Food</a>
+                    <a href="#" class="recent-link"><img src="img/catgimg.png" class="catgsearches">Space</a>
+                    <a href="#" class="recent-link"><img src="img/catgimg.png" class="catgsearches">Landscape</a>
+                    <a href="#" class="recent-link"><img src="img/catgimg.png" class="catgsearches">technology</a>
+                    <a href="#" class="recent-link"><img src="img/catgimg.png" class="catgsearches">Sky</a>
+                    <a href="#" class="recent-link"><img src="img/catgimg.png" class="catgsearches">Dark</a>
+                    <a href="#" class="recent-link"><img src="img/catgimg.png" class="catgsearches">Animals</a>
+                    <a href="#" class="recent-link"><img src="img/catgimg.png" class="catgsearches">Butterfly</a>
+                    <a href="#" class="recent-link"><img src="img/catgimg.png" class="catgsearches">Color</a>
+
+                </div>
+            </div>
+          
 
             <div class="slider-container">
                 <div class="slider">
@@ -90,46 +118,46 @@
                     </li>
 
                     <li class="row to">
-                        <select class="select-with-search2" id="fourthselect">
+                        <!-- <select class="select-with-search2" id="fourthselect">
                             <option>Filters</option>
-                        </select>
+                        </select> -->
+                        <div class="custom-select-filter" id="filterPicker">
+                            <img src="img/filter.png" id="filterPickerIcon" class="hex"></img>
+                            <div class="select-trigger-filter">Filters
+                            </div>
+
+                            <div class="select-options-filter">
+                                <div class="option-filter" data-value="Latest">Latest</div>
+                                <div class="option-filter" data-value="Views">Views</div>
+                                <div class="option-filter" data-value="Trending">Trending</div>
+                            </div>
+                        </div>
                     </li>
                 </ul>
                 <ul id="imgcontrols" class="controls2">
                     <li class="row from">
-                        <!-- <select class="select-with-search2" id="fourthselect">
-                            <option disabled selected>All Orientation</option>
-                            <option>Vertical</option>
-                            <option>Horizontal</option>
-                            <option>Square</option>
-
-                        </select> -->
-                        <div class="orientation-container">
+                  
                             <div class="custom-select-orientation" id="orientationPicker">
                                 <div class="select-trigger-orientation">All Orientation
-                                    <img src="img/dropdown.png" id="from" class="fas"></img>
                                 </div>
+                                <img src="img/dropdown.png" id="orientationPickerIcon" class="fas"></img>
+
                                 <div class="select-options-orientation">
                                     <div class="option-orientation" data-value="Vertical">Vertical</div>
                                     <div class="option-orientation" data-value="Horizontal">Horizontal</div>
                                     <div class="option-orientation" data-value="Square">Square</div>
                                 </div>
                             </div>
-                        </div>
+                        <!-- </div> -->
 
                     </li>
                     <li class="row from">
-                        <!-- <select class="select-with-search2" id="fourthselect">
-                            <option disabled selected>All Sizes</option>
-                            <option>Large</option>
-                            <option>Medium</option>
-                            <option>Small</option>
-
-                        </select> -->
-                        <div class="custom-select-size">
+                       
+                        <div class="custom-select-size" id="sizePicker">
                             <div class="select-trigger-size">All Sizes
-                                <img src="img/dropdown.png" id="from" class="fas"></img>
                             </div>
+                            <img src="img/dropdown.png" id="sizePickerIcon" class="fas"></img>
+
                             <div class="select-options-size">
                                 <div class="option-size">Large</div>
                                 <div class="option-size">Medium</div>
@@ -139,37 +167,13 @@
 
                     </li>
                     <li class="row from">
-                        <!-- <select class="select-with-search2" id="fourthselect">
-                            <option disabled selected>Enter hex code</option>
-                            <option value="#FF0000">Red (#FF0000)</option>
-                            <option value="#00FF00">Green (#00FF00)</option>
-                            <option value="#0000FF">Blue (#0000FF)</option>
-                        </select> -->
-                        <!-- <div class="color-container">
+                    
                             <div class="custom-select" id="colorPicker">
-                                <div class="select-trigger">Enter hex code</div>
-                                <div class="select-options">
-                                    <div class="option" style="background-color: #FF0000;" value="#FF0000;"></div>
-                                    <div class="option" style="background-color: #00FF00;" value="#00FF00;"></div>
-                                    <div class="option" style="background-color: #0000FF;" value="#0000FF;"></div>
-                                    <div class="option" style="background-color: #FF0000;" value="#FF0000;"></div>
-                                    <div class="option" style="background-color: #00FF00;" value="#00FF00;"></div>
-                                    <div class="option" style="background-color: #0000FF;" value="#0000FF;"></div>
-                                    <div class="option" style="background-color: #FF0000;" value="#FF0000;"></div>
-                                    <div class="option" style="background-color: #00FF00;" value="#00FF00;"></div>
-                                    <div class="option" style="background-color: #0000FF;" value="#0000FF;"></div>
-                                    <div class="option" style="background-color: #FF0000;" value="#FF0000;"></div>
-                                    <div class="option" style="background-color: #00FF00;" value="#00FF00;"></div>
-                                    <div class="option" style="background-color: #0000FF;" value="#0000FF;"></div>
-                                </div>
-                            </div>
-                        </div> -->
-
-                        <div class="color-container">
-                            <div class="custom-select" id="colorPicker">
+                                <img src="img/hex.png" id="from" class="hex"></img>
                                 <div class="select-trigger">Enter hex code
-                                    <img src="img/dropdown.png" id="from" class="fas"></img>
                                 </div>
+                                <img src="img/dropdown.png" id="colorPickerIcon" class="fas"></img>
+
                                 <div class="select-options">
                                     <div class="option" style="background-color: #FF0000;" data-value="#FF0000"></div>
                                     <div class="option" style="background-color: #00FF00;" data-value="#00FF00"></div>
@@ -182,9 +186,7 @@
                                     <div class="option" style="background-color: #0000FF;" data-value="#0000FF"></div>
                                 </div>
                             </div>
-                        </div>
-
-
+        
                     </li>
 
                 </ul>
