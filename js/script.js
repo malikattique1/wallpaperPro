@@ -12,6 +12,274 @@
 
 
 
+// const imageContainer = $('#imageContainer');
+// const imagePopup = $('#imagePopup');
+// const popupImage = $('#popupImage');
+
+// imageContainer.on('click', '.image', function() {
+//   const imageUrl = $(this).attr('src');
+//   popupImage.attr('src', imageUrl);
+//   imagePopup.fadeIn('fast');
+// });
+
+
+
+
+// Close the pop-up when clicking outside the image
+// $(document).on('click', function(event) {
+//   if (!imagePopup.is(event.target) && imagePopup.has(event.target).length === 0) {
+//     imagePopup.fadeOut('fast');
+//   }
+// });
+
+
+
+// $(document).ready(function() {
+//   const imageContainer = $('#imageContainer');
+//   const imagePopup = $('#imagePopup');
+//   const popupImage = $('#popupImage');
+//   let isImageOpen = false;
+
+//   // Show the pop-up with the clicked image
+//   imageContainer.on('click', '.image', function() {
+//     const imageUrl = $(this).attr('src');
+//     popupImage.attr('src', imageUrl);
+//     imagePopup.fadeIn('fast');
+//     isImageOpen = true;
+//   });
+
+//   // Close the pop-up when clicking outside the image or pop-up
+//   $(document).on('click', function(event) {
+//     if (isImageOpen && !imagePopup.is(event.target) && imagePopup.has(event.target).length === 0) {
+//       imagePopup.fadeOut('fast');
+//       isImageOpen = false;
+//     }
+//   });
+// });
+
+
+$(document).ready(function() {
+
+
+
+  $('.like-btn2').on('click', function() {
+    // Toggle the classes "like-btn" and "liked-btn" for the clicked save button
+    $(this).toggleClass('like-btn2 liked-btn');
+    // Get the current source of the image
+    const currentSrc = $(this).attr('src');
+    // Check if the button is now in liked state (has class "liked-btn")
+    if ($(this).hasClass('liked-btn')) {
+      // Change the source of the image to the new image path for liked state
+      $(this).attr('src', 'img/liked.png');
+    } else {
+      // Change the source of the image back to the original image path
+      $(this).attr('src', 'img/like2.png');
+    }
+  });
+
+
+
+
+  $('.save-btn').on('click', function() {
+    // Toggle the classes "like-btn" and "liked-btn" for the clicked save button
+    $(this).toggleClass('like-btn liked-btn');
+    // Get the current source of the image
+    const currentSrc = $(this).attr('src');
+    // Check if the button is now in liked state (has class "liked-btn")
+    if ($(this).hasClass('liked-btn')) {
+      // Change the source of the image to the new image path for liked state
+      $(this).attr('src', 'img/liked.png');
+    } else {
+      // Change the source of the image back to the original image path
+      $(this).attr('src', 'img/like.png');
+    }
+  });
+
+
+
+
+
+
+  $('.download-btn').on('click', function() {
+    // Get the URL of the image to be downloaded
+    const imageUrl = $(this).closest('.image-item').find('.image').attr('src');
+
+    // Create a temporary anchor element
+    const downloadLink = document.createElement('a');
+    downloadLink.href = imageUrl;
+
+    // Set the download attribute to the image file name
+    downloadLink.download = imageUrl.substring(imageUrl.lastIndexOf('/') + 1);
+
+    // Trigger the download action
+    downloadLink.click();
+  });
+
+
+  $('#freeDownload').on('click', function() {
+    // Get the URL of the image to be downloaded
+    const imageUrl = $('#popupImage').attr('src');
+
+    // Create a temporary anchor element
+    const downloadLink = document.createElement('a');
+    downloadLink.href = imageUrl;
+
+    // Set the download attribute to the image file name
+    downloadLink.download = imageUrl.substring(imageUrl.lastIndexOf('/') + 1);
+
+    // Trigger the download action
+    downloadLink.click();
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  const slider = $('.slider');
+  const sliderArrowLeft = $('#sliderArrowLeft');
+  const sliderArrowRight = $('#sliderArrowRight');
+  const sliderLinks = $('.slider-link');
+  let linksToShow = 9; // Default value for desktop screens
+  let currentIndex = 0;
+
+  function updateSlider() {
+    sliderLinks.hide(); // Hide all links
+
+    // Show the next batch of links starting from currentIndex
+    sliderLinks.slice(currentIndex, currentIndex + linksToShow).show();
+
+    // Show/hide the arrows based on the current index
+    sliderArrowLeft.toggleClass('hidden', currentIndex === 0);
+    sliderArrowRight.toggleClass('hidden', currentIndex >= sliderLinks.length - linksToShow);
+
+    // Prevent moving further right when no links left
+    if (currentIndex > sliderLinks.length - linksToShow) {
+      currentIndex = sliderLinks.length - linksToShow;
+      updateSlider();
+    }
+  }
+
+  // Show the initial set of links based on screen size
+  function showInitialLinks() {
+    const screenWidth = $(window).width();
+    if (screenWidth <= 1424 && screenWidth >= 968) {
+      linksToShow = 6; // Show 3 links on ipad screens
+    } else if(screenWidth <= 968 && screenWidth >= 768) {
+      linksToShow = 4; // Show 3 links on mobile screens
+    }
+     else if(screenWidth <= 768) {
+      linksToShow = 3; // Show 3 links on mobile screens
+    }
+    else {
+      linksToShow = 9; // Show 9 links on desktop screens
+    }
+    updateSlider();
+  }
+
+  // Call the function to show initial links
+  showInitialLinks();
+
+  // Recalculate the number of links to show on window resize
+  $(window).resize(function() {
+    showInitialLinks();
+  });
+
+  // Clicking on the right arrow advances the slider
+  sliderArrowRight.on('click', function() {
+    currentIndex += linksToShow;
+    updateSlider();
+  });
+
+  // Clicking on the left arrow goes back in the slider
+  sliderArrowLeft.on('click', function() {
+    currentIndex -= linksToShow;
+    if (currentIndex < 0) {
+      currentIndex = 0;
+    }
+    updateSlider();
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  const imageContainer = $('#imageContainer');
+  const imagePopup = $('#imagePopup');
+  const popupImage = $('#popupImage');
+  let isImageOpen = false;
+
+  // Show the pop-up with the clicked image
+  imageContainer.on('click', '.image', function(event) {
+    event.stopPropagation(); // Prevent the click event from propagating to the document
+    const imageUrl = $(this).attr('src');
+    popupImage.attr('src', imageUrl);
+    imagePopup.fadeIn('fast');
+    isImageOpen = true;
+  });
+
+  // Close the pop-up when clicking outside the image or pop-up
+  $(document).on('click', function(event) {
+    if (isImageOpen && !imagePopup.is(event.target) && imagePopup.has(event.target).length === 0) {
+      imagePopup.fadeOut('fast');
+      isImageOpen = false;
+    }
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
 
 const searchContainer = $('.search-container');
 const searchesContainer = $('.searches-container');

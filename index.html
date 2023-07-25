@@ -46,6 +46,8 @@
                 <input type="text" class="search-input" placeholder="Search clock wallpaper">
                 <i class="fas fa-search search-icon"></i>
             </div>
+
+            <div class="searchesContainerMain">
             <div class="searches-container" style="display:none;">
                 <h4>Recent Searches</h4>
                 <div class="recent-links">
@@ -57,7 +59,7 @@
                 </div>
                 <h4>Trending</h4>
                 <div class="recent-links">
-                    <a href="#" class="recent-link"><img src="img/catgimg.png"  class="catgsearches">Anime</a>
+                    <a href="#" class="recent-link"><img src="img/catgimg.png" class="catgsearches">Anime</a>
                     <a href="#" class="recent-link"><img src="img/catgimg.png" class="catgsearches">Coffee</a>
                     <a href="#" class="recent-link"><img src="img/catgimg.png" class="catgsearches">Sunset</a>
                     <a href="#" class="recent-link"><img src="img/catgimg.png" class="catgsearches">Flowers</a>
@@ -73,13 +75,12 @@
 
                 </div>
             </div>
-          
+            </div>
 
+<!-- 
             <div class="slider-container">
                 <div class="slider">
-                    <!-- <img src="img/slide1.jpg" alt="Slide 1">
-                  <img src="img/slide2.jpg" alt="Slide 2">
-                  <img src="img/slide3.jpg" alt="Slide 3"> -->
+                 
                 </div>
                 <div class="slider-links">
                     <a href="#" class="slider-link">Abstract</a>
@@ -92,7 +93,39 @@
                     <a href="#" class="slider-link">Comics</a>
                     <a href="#" class="slider-link">Dark</a>
                 </div>
-            </div>
+            </div> -->
+
+
+
+            <div class="slider-container">
+                <div class="slider">
+                  <!-- Place your slider items here -->
+                  <a href="#" class="slider-link">Abstract</a>
+                  <a href="#" class="slider-link">Animals</a>
+                  <a href="#" class="slider-link">Anime</a>
+                  <a href="#" class="slider-link">Automative</a>
+                  <a href="#" class="slider-link">Bollywood</a>
+                  <a href="#" class="slider-link">Butterfly</a>
+                  <a href="#" class="slider-link">Color</a>
+                  <a href="#" class="slider-link">Comics</a>
+                  <a href="#" class="slider-link">Dark</a>
+                  <a href="#" class="slider-link">Abstractx</a>
+                  <a href="#" class="slider-link">Animalsx</a>
+                  <a href="#" class="slider-link">Animex</a>
+                  <a href="#" class="slider-link">Automativex</a>
+                  <a href="#" class="slider-link">Bollywoodx</a>
+                  <a href="#" class="slider-link">Butterflyx</a>
+                  <a href="#" class="slider-link">Colorx</a>
+                  <a href="#" class="slider-link">Comicsx</a>
+                  <a href="#" class="slider-link">Darkx</a>
+                </div>
+                <div class="slider-arrow slider-arrow-left" id="sliderArrowLeft">&larr;</div>
+                <div class="slider-arrow slider-arrow-right" id="sliderArrowRight">&rarr;</div>
+              </div>
+              
+              
+
+
 
 
 
@@ -118,9 +151,6 @@
                     </li>
 
                     <li class="row to">
-                        <!-- <select class="select-with-search2" id="fourthselect">
-                            <option>Filters</option>
-                        </select> -->
                         <div class="custom-select-filter" id="filterPicker">
                             <img src="img/filter.png" id="filterPickerIcon" class="hex"></img>
                             <div class="select-trigger-filter">Filters
@@ -136,23 +166,23 @@
                 </ul>
                 <ul id="imgcontrols" class="controls2">
                     <li class="row from">
-                  
-                            <div class="custom-select-orientation" id="orientationPicker">
-                                <div class="select-trigger-orientation">All Orientation
-                                </div>
-                                <img src="img/dropdown.png" id="orientationPickerIcon" class="fas"></img>
 
-                                <div class="select-options-orientation">
-                                    <div class="option-orientation" data-value="Vertical">Vertical</div>
-                                    <div class="option-orientation" data-value="Horizontal">Horizontal</div>
-                                    <div class="option-orientation" data-value="Square">Square</div>
-                                </div>
+                        <div class="custom-select-orientation" id="orientationPicker">
+                            <div class="select-trigger-orientation">All Orientation
                             </div>
+                            <img src="img/dropdown.png" id="orientationPickerIcon" class="fas"></img>
+
+                            <div class="select-options-orientation">
+                                <div class="option-orientation" data-value="Vertical">Vertical</div>
+                                <div class="option-orientation" data-value="Horizontal">Horizontal</div>
+                                <div class="option-orientation" data-value="Square">Square</div>
+                            </div>
+                        </div>
                         <!-- </div> -->
 
                     </li>
                     <li class="row from">
-                       
+
                         <div class="custom-select-size" id="sizePicker">
                             <div class="select-trigger-size">All Sizes
                             </div>
@@ -167,33 +197,40 @@
 
                     </li>
                     <li class="row from">
-                    
-                            <div class="custom-select" id="colorPicker">
-                                <img src="img/hex.png" id="from" class="hex"></img>
-                                <div class="select-trigger">Enter hex code
-                                </div>
-                                <img src="img/dropdown.png" id="colorPickerIcon" class="fas"></img>
 
-                                <div class="select-options">
-                                    <div class="option" style="background-color: #FF0000;" data-value="#FF0000"></div>
-                                    <div class="option" style="background-color: #00FF00;" data-value="#00FF00"></div>
-                                    <div class="option" style="background-color: #0000FF;" data-value="#0000FF"></div>
-                                    <div class="option" style="background-color: #FF0000;" data-value="#FF0000"></div>
-                                    <div class="option" style="background-color: #00FF00;" data-value="#00FF00"></div>
-                                    <div class="option" style="background-color: #0000FF;" data-value="#0000FF"></div>
-                                    <div class="option" style="background-color: #FF0000;" data-value="#FF0000"></div>
-                                    <div class="option" style="background-color: #00FF00;" data-value="#00FF00"></div>
-                                    <div class="option" style="background-color: #0000FF;" data-value="#0000FF"></div>
-                                </div>
+                        <div class="custom-select" id="colorPicker">
+                            <img src="img/hex.png" id="from" class="hex"></img>
+                            <div class="select-trigger">Enter hex code
                             </div>
-        
+                            <img src="img/dropdown.png" id="colorPickerIcon" class="fas"></img>
+
+                            <div class="select-options">
+                                <div class="option" style="background-color: #FF0000;" data-value="#FF0000"></div>
+                                <div class="option" style="background-color: #00FF00;" data-value="#00FF00"></div>
+                                <div class="option" style="background-color: #0000FF;" data-value="#0000FF"></div>
+                                <div class="option" style="background-color: #FF0000;" data-value="#FF0000"></div>
+                                <div class="option" style="background-color: #00FF00;" data-value="#00FF00"></div>
+                                <div class="option" style="background-color: #0000FF;" data-value="#0000FF"></div>
+                                <div class="option" style="background-color: #FF0000;" data-value="#FF0000"></div>
+                                <div class="option" style="background-color: #00FF00;" data-value="#00FF00"></div>
+                                <div class="option" style="background-color: #0000FF;" data-value="#0000FF"></div>
+                            </div>
+                        </div>
+
                     </li>
 
                 </ul>
-                <!-- <div id="imageContainer" class="image-container"></div> -->
+           
+
+
+
+
+
+
+
                 <div id="imageContainer" class="image-container">
-                    <li class="image-item">
-                        <img src="img/1.png" alt="Image 1">
+                    <li class="image-item" data-image="img/testimg1.jpg">
+                        <img src="img/testimg1.jpg" class="image" alt="Image 1">
 
                         <span class="button-container">
                             <img class="like-btn" src="img/save.png" alt="Image 1">
@@ -204,7 +241,7 @@
                         </span>
                     </li>
                     <li class="image-item">
-                        <img src="img/2.png" alt="Image 2">
+                        <img src="img/testimg2.jpg" class="image" alt="Image 2">
                         <span class="button-container">
                             <img class="like-btn" src="img/save.png" alt="Image 1">
                             <img class="save-btn" src="img/like.png" alt="Image 2">
@@ -214,7 +251,7 @@
                         </span>
                     </li>
                     <li class="image-item">
-                        <img src="img/3.png" alt="Image 3">
+                        <img src="img/3.png" class="image" alt="Image 3">
                         <span class="button-container">
                             <img class="like-btn" src="img/save.png" alt="Image 1">
                             <img class="save-btn" src="img/like.png" alt="Image 2">
@@ -224,7 +261,7 @@
                         </span>
                     </li>
                     <li class="image-item">
-                        <img src="img/1.png" alt="Image 1">
+                        <img src="img/1.png" class="image" alt="Image 1">
                         <span class="button-container">
                             <img class="like-btn" src="img/save.png" alt="Image 1">
                             <img class="save-btn" src="img/like.png" alt="Image 2">
@@ -234,7 +271,7 @@
                         </span>
                     </li>
                     <li class="image-item">
-                        <img src="img/2.png" alt="Image 2">
+                        <img src="img/2.png" class="image" alt="Image 2">
                         <span class="button-container">
                             <img class="like-btn" src="img/save.png" alt="Image 1">
                             <img class="save-btn" src="img/like.png" alt="Image 2">
@@ -244,7 +281,7 @@
                         </span>
                     </li>
                     <li class="image-item">
-                        <img src="img/3.png" alt="Image 3">
+                        <img src="img/3.png" class="image" alt="Image 3">
                         <span class="button-container">
                             <img class="like-btn" src="img/save.png" alt="Image 1">
                             <img class="save-btn" src="img/like.png" alt="Image 2">
@@ -257,21 +294,48 @@
                 </div>
 
 
+                <div class="image-popup" id="imagePopup" style="display: none;">
+
+                    <ul class="image-popup-top">
+                        <li class="row from">
+                            <button id="" class="submit-btn">
+                                <img class="btnImg" src="img/collect.png">
+                                <span class="btnText">Collect</span>
+                            </button>
+                            <button id="" class="submit-btn">
+                                <img class="btnImg like-btn2" src="img/like2.png">
+                                <span class="btnText">Like</span>
+                            </button>
+                            <button id="freeDownload" class="submit-btn">
+                                <span class="btnText">Free Download</span>
+                            </button>
+                        </li>
+                    </ul>
 
 
-                <!-- <div id="imgwrappertextbox" class="wrapper">
-
-                    <div class="text-input">
-                        <textarea spellcheck="false" id="from-text2" class="from-text2" placeholder=""></textarea>
-                    </div>
+                    <img src="" alt="Popup Image" class="popupImage" id="popupImage">
 
 
-                    <div class="text-input">
-                        <textarea spellcheck="false" readonly disabled id="to-text2" class="to-text2"
-                            placeholder=""></textarea>
-                    </div>
 
-                </div> -->
+                    <ul class="image-popup-top">
+                        <li class="row from">
+                            <button id="" class="submit-btn">
+                                <img class="btnImg" src="img/info.png">
+                                <span class="btnText">Info</span>
+                            </button>
+                            <button id="" class="submit-btn">
+                                <img class="btnImg" src="img/share.png">
+                                <span class="btnText">Share</span>
+                            </button>
+                        </li>
+                    </ul>
+                
+
+                </div>
+
+        
+
+               
 
 
 

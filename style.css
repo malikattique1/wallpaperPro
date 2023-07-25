@@ -133,22 +133,29 @@ body {
 }
 
 .headercontainer {
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     width: 100%;
-
-
+    /* height:90vh; */
     position: relative;
     background: url("img/headerimg.png");
     background-size: cover;
     background-position: center;
     padding-top: 200px;
     padding-bottom: 100px;
-
+    color: white;
+}
+.searchesContainerMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    position: relative;
     color: white;
 }
 
@@ -219,6 +226,10 @@ body {
 
 
 .searches-container{
+    position: absolute;
+    top: 0;
+    left: 50;
+    z-index: 999;
     border-top:1px solid #999999;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -272,9 +283,11 @@ body {
 
 
 .slider-container {
-    padding-top: 80px;
+    padding-top: 45px;
     position: relative;
-    width: 100%;
+    /* width: 100%; */
+    width: 70%;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -305,7 +318,6 @@ body {
     padding: 8px 14px;
     margin: 8px;
     color: white;
-    /* background-color: transparent; */
     background-color: rgba(255, 255, 255, 0.3);
     text-decoration: none;
     border-radius: 5px;
@@ -315,6 +327,29 @@ body {
     background-color: #2479F9;
 }
 
+
+/* Your existing styles for .slider-container and .slider */
+
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 24px;
+    opacity: 0.7;
+  }
+  
+  .slider-arrow-right {
+    top:72%;
+    right: 5%;
+    transition: opacity 0.3s;
+  }
+  
+  .slider-arrow-left {
+    top:72%;
+    left: 5%;
+    transition: opacity 0.3s;
+  }
 
 
 
@@ -355,7 +390,10 @@ body {
 
 
 
-
+/* .liked-btn {
+   color:red;
+   background-color: red;
+  } */
 
 
 
@@ -364,7 +402,7 @@ body {
 
 .btnImg {
     margin-right: 8px;
-    width: 22px;
+    width: 15px;
 }
 
 .btnText {
@@ -746,7 +784,35 @@ body {
 .image-container li img {
     width: 100%;
     margin-bottom: 30px;
+    height:55vh;
+    border-radius: 10px;
 }
+/* .image{
+    width: 100%;
+    margin-bottom: 30px;
+    height:55vh;
+    border-radius: 10px;  
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -784,6 +850,12 @@ body {
     border-radius: 5px;
     cursor: pointer;
 }
+
+
+/* .like-btn2{
+    background-color: white !important;
+    cursor: pointer;
+} */
 
 
 
@@ -1218,9 +1290,62 @@ li,
   .controls2 .row.to {
     flex: 1; 
   }
+
+
+
+
+
+
+
+/* Styles for the image-popup */
+.image-popup {
+    /* display: none; */
+    display: flex;
+    flex-direction:column;
+    gap:20px;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 9999;
+    width: 50%;
+  }
   
+  /* Styles for the image inside the pop-up */
+  .image-popup .popupImage {
+    width: 60%;
+    max-height: 50vh;
+  }
+
+
+
+
+
 
   
+  .image-popup-top {
+    display: flex;
+    flex-direction: row;
+    padding-top: 22px;
+    padding-bottom: 30px;
+    padding-right: 50px;
+
+    justify-content: center;
+    align-self: flex-end;
+  }
+  .image-popup-top .row.from{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* align-items: flex-end;s */
+    justify-content: right;
+    gap: 25px;
+    /* width: 100%; */
+  }
 
 
 
@@ -1273,7 +1398,7 @@ li,
     background: #307FFF;
 }
 
-.container2 button {
+/* .container2 button {
     width: 36%;
     padding: 14px;
     outline: none;
@@ -1284,7 +1409,7 @@ li,
     font-size: 15px;
     border-radius: 5px;
     background: #307FFF;
-}
+} */
 
 .container3 button {
     width: 12%;
@@ -1370,10 +1495,11 @@ li,
 
 
 .submit-btn {
+    display:flex;
     height: 35px;
     padding: 0 15px;
-    background-color: #929292;
-    border: 0px solid #929292;
+    background-color: #FFFFFF;
+    border: 1px solid #929292;
     color: black;
     font-weight: bold;
     cursor: pointer;
@@ -1382,6 +1508,11 @@ li,
     text-align: center;
 }
 
+#freeDownload{
+    color:white;
+    background-color: #28A143;
+    border-color: #28A143;
+}
 
 
 .footerContent {
@@ -1788,6 +1919,58 @@ li,
 
 
 
+
+
+
+
+
+
+    .slider-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        font-size: 24px;
+        opacity: 0.7;
+      }
+      
+      .slider-arrow-right {
+        top:72%;
+        right: -25px;
+        transition: opacity 0.3s;
+      }
+      
+      .slider-arrow-left {
+        top:72%;
+        left: -25px;
+        transition: opacity 0.3s;
+      }
+
+
+
+
+
+
+
+
+
+    .headercontainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        position: relative;
+        background: url("img/headerimg.png");
+        background-size: cover;
+        background-position: center;
+        padding-top: 160px;
+        padding-bottom: 50px;
+        color: white;
+    }
+
+
     .search-container {
         position: relative;
         display: flex;
@@ -1847,6 +2030,7 @@ li,
 
 
 
+
 .fasearches{
     margin-left:10px;
     width:14px;
@@ -1873,8 +2057,10 @@ li,
 
 
 
+
+
     .slider-container {
-        padding-top: 40px;
+        padding-top: 30px;
         position: relative;
         width: 75%;
         display: flex;
@@ -1998,6 +2184,81 @@ li,
 
 
 
+
+
+
+
+    .image-popup {
+        /* display: none; */
+        display: flex;
+        flex-direction:column;
+        gap:20px;
+        align-items: center;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        z-index: 9999;
+        width: 65%;
+      }
+      
+      /* Styles for the image inside the pop-up */
+      .image-popup .popupImage {
+        width: 100%;
+        max-height: 60vh;
+      }
+    
+    
+    
+    
+    
+    
+      
+      .image-popup-top {
+        display: flex;
+        flex-direction: row;
+        padding-top: 22px;
+        padding-bottom: 30px;
+        padding-right: 1px;
+    
+        justify-content: center;
+        align-self: flex-end;
+      }
+      .image-popup-top .row.from{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* align-items: flex-end;s */
+        justify-content: right;
+        gap: 25px;
+        /* width: 100%; */
+      }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     .container {
         padding: 0px;
     }
@@ -2101,8 +2362,8 @@ li,
     .submit-btn {
         height: 35px;
         padding: 0 15px;
-        background-color: #929292;
-        border: 0px solid #929292;
+        background-color: #FFFFFF;
+        border: 1px solid #929292;
         color: black;
         font-weight: bold;
         cursor: pointer;
